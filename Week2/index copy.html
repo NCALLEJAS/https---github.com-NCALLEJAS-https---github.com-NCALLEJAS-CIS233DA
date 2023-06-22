@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.jpg">
+    <title>Gateway Community College</title>
+</head>
+<style>
+    body{
+        display: grid;
+        grid-template-columns: auto 25%;
+        grid-template-rows: 35% auto;
+        grid-template-areas: "hdr hdr" "main aside";
+    }
+    header{
+        grid-area: hdr;
+        text-align: center;
+        color: rgb( 0, 51, 161);
+        font-size: larger;
+        margin: 25px;
+    }
+    main{
+        grid-area: main;
+    }
+    aside{
+        grid-area: aside;
+    }
+    main, aside{
+        background-color: rgb( 0, 51, 161);
+        text-align: center;
+        color: white;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .geco{
+        width: 200px;
+        height: 200px;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style-type: none 
+    }
+    .flex-container > div {
+        color: black;
+        width: 90px;
+        margin: 20px;
+        text-align: center;
+        line-height: 15px;
+        font-size: 13px;
+        justify-content: space-between;
+    }
+    .text{
+        color: white;
+        text-decoration: none;
+    }
+
+</style>
+<body>
+
+    <header>
+        Gateway Community College
+    </header>
+
+    <main class="flex-container">
+        <div><a class="text" href="https://www.scottsdalecc.edu/college-police" title="College Police" >College&nbsp;Police</a></div>
+        <div><a class="text" href="https://www.scottsdalecc.edu/disclosures" title="Disclosures">Disclosures</a></div>
+        <div><a class="text" href="https://www.scottsdalecc.edu/human-resources" title="Jobs">Jobs</a></div>
+        <div><a class="text" href="https://library.scottsdalecc.edu/index" title="SCC Library">Library</a></div>
+        <div><a class="text" href="https://directory.scottsdalecc.edu/" title="SCC Faculty Directory">SCC&nbsp;Faculty&nbsp;Directory</a></div>
+        <div><a class="text" href="https://www.scottsdalecc.edu/students/technology/scc-help-desk" title="SCC Help Desk" >SCC&nbsp;Help&nbsp;Desk</a></div>
+        <div><a class="text" href="http://www.wunderground.com/personal-weather-station/dashboard?ID=KAZSCOTT198" title="SCC Weather">SCC&nbsp;Weather</a></div>
+        <div><a class="text" href="https://www.scottsdalecc.edu/students/policies/nondiscrimination-policy#titleix title="Title IX Coordinator" >Title&nbsp;IX&nbsp;Coordinator</a></div>
+    </main>
+
+    <aside>
+        <img class="geco" src="./images/athletics.svg" alt="Fighting Artichokes Logo"></li>
+        <ul class="flex-container">
+            <li><img src="./images/twitter.png" alt="Twitter Icon"></li>
+            <li><img src="./images/facebook.png" alt="Facebook Icon"></li>
+            <li><img src="./images/youtube.png" alt="YouTube Icon"></li>
+            <li><img src="./images/insta.png" alt="Instagram Icon"></li>
+            <li><img src="./images/in.png" alt="LinkedIn Icon"></li>
+            <li><img src="./images/tiktok.png" alt="TikTok Icon"></li>
+        </ul>
+    </aside>
+    
+</body>
+</html>

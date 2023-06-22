@@ -1,0 +1,145 @@
+/* 
+dark grey rgb(77, 77, 76);
+light grey rgb(153,153,153)
+light light grey rgb(174,174,174)
+grey rgb(118,117,117)
+ */
+
+ /* body{
+    display: grid;
+    grid-template-columns: repeat(7,75px);
+    gap: 6px;
+    background-color: black;
+    color: white;
+} */
+.background-calendar{
+    background-image: url("./images/background.jpg");
+    background-size: contain;
+    background-repeat: none;
+    background-size: cover;
+    width: 50%;
+}
+month{
+    grid-column: span 7;
+    background-color: rgb(77, 77, 76, .6);
+    height: 30px;
+    width: 50%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    
+}
+trailer, leader, day{
+    border-radius: 8px;
+    height: 60px;
+    width: 50%;
+}
+leader, trailer{
+    background-color: rgb(138, 137, 137, .6);
+}
+leader{
+    grid-column: span 3;
+}
+trailer{
+    grid-column: span 4;
+}
+day{
+    box-sizing: border-box;
+    text-align: right;
+    padding: 2px 4px 0px;
+    background-color: rgb(191, 190, 190);
+
+}
+#valintine{
+    background-color: rgb(77, 77, 76);
+}
+
+
+
+
+
+
+body{
+    display: grid;
+    grid-template-columns: auto 25%;
+    grid-template-rows: 35% auto;
+    grid-template-areas: "hdr hdr" "main aside";
+}
+header{
+    grid-area: hdr;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+    background-image: url("./images/background.jpg");
+    background-size: contain;
+    background-repeat: none;
+    background-size: cover;
+    height: 80vh;
+    
+}
+  
+.transbox {
+    margin: 30px;
+    background-color: rgb(153,153,153, .6);
+    border-radius: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+} 
+.transbox h1 {
+    margin: 0%;
+    font-weight: bold;
+    color: white;
+}
+main{
+    grid-area: main;
+    width: 1200px;
+}
+aside{
+    grid-area: aside;
+    width: 330px;
+}
+main, aside{
+    background-color:rgb(77, 77, 76);
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 20vh;
+}
+.geco{
+    width: 150px;
+    height: 150px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-container > div {
+    color: black;
+    margin: 20px;
+    text-align: center;
+    line-height: 15px;
+    width: 500px;
+    font-size: 13px;
+    justify-content: space-between;
+}
+.text{
+    color: white;
+    text-decoration: none;
+}
+#bottom{
+    position: absolute;
+    bottom: 0%;
+}
+#bottom-right{
+    position: absolute;
+    bottom: 0%;
+    right: 0.5%;
+}

@@ -1,0 +1,20 @@
+h1{
+    color: blue;
+    font-style: 36pt;
+    text-align: center;
+}
+td{
+    background-color: brown;
+}
+.textinput{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#newbutton{
+    background-color: red;
+}
+#regestrationdate, #userEmail{
+    background-color: green;
+}
+#firstdiv > span{
+    font-weight: bold;
+}

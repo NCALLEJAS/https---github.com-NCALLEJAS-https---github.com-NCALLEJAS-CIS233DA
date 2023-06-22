@@ -1,0 +1,25 @@
+.main{
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 2px;
+    width: 31%;
+}
+.white{
+    border: 1px solid black;
+    margin: 0px;
+}
+.blue{
+    background-color: rgb(25, 169, 242);
+    margin: 0px;
+    border: 1px solid black;
+}
+.remedial{
+    margin: 0px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.symbols{
+    position: relative;
+    left: 400px;
+    padding: 10px
+}
