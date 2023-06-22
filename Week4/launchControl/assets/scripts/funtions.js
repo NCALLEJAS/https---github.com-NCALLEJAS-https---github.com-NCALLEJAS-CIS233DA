@@ -15,47 +15,77 @@ function getGas() {
     }
 }
 
-let batteryLevel = 0;
+let batteryCharge = 0;
 
-function getBattery() {
-    if (batteryLevel == 0 ) {
-        batteryLevel = 1;
+function setBattery() {
+    if (batteryCharge == 0 ) {
+        batteryCharge = 1;
         document.getElementById("batt").src = "./assets/images/batt1.PNG";
         document.getElementById("bttn_batt").src = "./assets/images/bttn_batt_1.PNG"
     } else {
-        batteryLevel = 0;
+        batteryCharge = 0;
         document.getElementById("batt").src = "./assets/images/batt0.PNG";
         document.getElementById("bttn_batt").src = "./assets/images/bttn_batt_0.PNG"
 
     }
 }
 
-let tractionLevel = 1;
+let tractionStatus = 1;
 
-function getTraction() {
-    if (tractionLevel == 1 ) {
-        tractionLevel = 0;
+function setTraction() {
+    if (tractionStatus == 1 ) {
+        tractionStatus = 0;
         document.getElementById("trac").src = "./assets/images/trac1.PNG";
         document.getElementById("bttn_trac").src = "./assets/images/bttn_trac_1.PNG"
     } else {
-        tractionLevel = 1;
+        tractionStatus = 1;
         document.getElementById("trac").src = "./assets/images/trac0.PNG";
         document.getElementById("bttn_trac").src = "./assets/images/bttn_trac_0.PNG"
 
     }
 }
 
-let parkingLevel = 1;
+let parkingStatus = 1;
 
-function getParking() {
-    if (parkingLevel == 1 ) {
-        parkingLevel = 0;
+function setParking() {
+    if (parkingStatus == 1 ) {
+        parkingStatus = 0;
         document.getElementById("brake").src = "./assets/images/p1.PNG";
         document.getElementById("bttn_park").src = "./assets/images/bttn_park_1.PNG"
     } else {
-        parkingLevel = 1;
+        parkingStatus = 1;
         document.getElementById("brake").src = "./assets/images/p0.PNG";
         document.getElementById("bttn_park").src = "./assets/images/bttn_park_0.PNG"
+
+    }
+}
+
+let shifter = 0;
+let shiftInd = document.getElementById("mode");
+let shiftHandle = document.getElementById("bttn_shifter");
+
+function setMode() {
+    switch (shifter) {
+        case 0:
+            shifter = 1;
+            shiftInd.innerHTML = "ECO PRO";
+            shiftHandle.style.top = "720px";
+            break; 
+        case 1:
+            shifter = 2;
+            shiftInd.innerHTML = "COMFORT";
+            shiftHandle.style.top = "740px";
+            break; 
+        case 2:
+            shifter = 3;
+            shiftInd.innerHTML = "SPORT";
+            shiftHandle.style.top = "760px";
+            break; 
+        
+        default:
+            shifter = 0; 
+            shiftInd.innerHTML = "PARK";
+            shiftHandle.style.top = "700px";
 
     }
 }
