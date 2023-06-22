@@ -1,38 +1,45 @@
 function tryLaunch(){
-    var one = true;
+    var active = true;
     var msg;
     
     if (breakStatus == 0) {
-        one = false;
+        active = false;
         msg = "break is on"
     } 
     
     if (tractionStatus == 0) {
-        one = false;
+        avtive = false;
         msg = "traction is on"
     }
     
     if (batteryCharge = 1) {
-        one = false;
-        msg = "battery is on"
-    
+        active = false;
+        msg = "no battery"
     }
     
     if (gasLevel = 1) {
-        one = false;
+        active = false;
         msg = "gas is low"
-    
     }
     
     if (shifter < 3) {
-        one = false;
-        msg = "traction is on"
-    
+        active = false;
+        msg = "not in SPORT"
     }
     
-    if (!one){
-        //display error 
-        launchControl = 0
+    if (!active){
+        msg.innerHTML = "ERROR";
+        document.getElementById("launch").src = "./assets/images/lca0.PNG"; 
+        document.getElementById('sputter').src = "./assets/media/sputter.mp3";
+        //change launch img to 1ca0
+        //play sputter
+    } else {
+        msg.innerHTML = " ";
+        document.getElementById("launch").src = "./assets/images/lca1.PNG";
+        document.getElementById('launch').src = "./assets/media/launch.mp3";
+        //clear error
+        //change launch img to 1ca1
+        //play launch
     }
 }
 
