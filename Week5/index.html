@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info</title>
+    <link rel="stylesheet" href="stylessmall.css"/>
+    <link rel="stylesheet" href="stylesmedium.css"/>
+    <link rel="stylesheet" href="styleslarge.css"/>
+</head>
+
+<body style="background-color: grey;">
+
+    <div id="small">
+        
+        <div id="state0">
+            <header>
+                <h1 class="text-header">ALASKA</h1>
+                
+                <select class="text-header" id="location" style="width: 100%;">
+                  <option value="Alaska">Alaska</option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Maryland">Maryland</option>
+                  <option value="Pennsylvania">Pennsylvania</option>
+                  <option value="California">California</option>
+                  <option value="Oklahoma">Oklahoma</option>
+                </select>
+                <div id="weather" class="text-header"></div>
+            </header>
+    
+            <main class="flex-container"> 
+                <img class="img" src="./images/whale-200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/downtown-200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/landscape-200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images//kayak-200.jpg" alt="Callejas"></li>
+            </main>
+    
+            <article>
+                 <p class="text-body">Discover the rich cultural and natural history of Alaska at the Alaska State Museum. It showcases exhibits on indigenous art, history, wildlife, and more. Enjoy kayaking or canoeing in the serene waters of Juneau's fjords and bays. You can paddle amidst breathtaking scenery and observe wildlife such as seals, sea lions, and eagles. Average high temperatures range from 58°F to 64°F, while average low temperatures range from 40°F to 50°F Juneau also receives a fair amount of rainfall, so it's advisable to pack appropriate rain gear when visiting.
+                 </p>
+            </article>
+    
+            <iframe class="video" src="https://www.youtube.com/embed/YiVajNQEU-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+            <footer>
+                <select class="dropdown" onchange="setState(this)">
+                    <option value="0">State Selection</option>
+                    <option value="1">Arizona</option>
+                    <option value="2">Maryland</option>
+                    <option value="3">Pennsylvania</option>
+                    <option value="4">California</option>
+                    <option value="5">Oklahoma</option>
+                </select>
+            </footer>
+
+        </div>
+
+        <div id="state1" style="display:none;">
+            
+            <header>
+                <h1 class="text-header">Arizona</h1>
+                
+                <select class="text-header" id="location" style="width: 100%;">
+                  <option value="Alaska">Alaska</option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Maryland">Maryland</option>
+                  <option value="Pennsylvania">Pennsylvania</option>
+                  <option value="California">California</option>
+                  <option value="Oklahoma">Oklahoma</option>
+                </select>
+                <div id="weather" class="text-header"></div>
+            </header>
+    
+            <main class="flex-container"> 
+                <img class="img" src="./images/redrock200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/download200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/sunset200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/phxhouse200.jpg" alt="Callejas"></li>
+            </main>
+    
+            <article>
+                 <p class="text-body">Arizona, also known as the Grand Canyon State, offers a diverse range of attractions and activities for visitors. The state is famous for its iconic natural wonders, such as the Grand Canyon, where travelers can marvel at the vastness of the canyon and enjoy hiking, rafting, or helicopter tours. The Sonoran Desert, with its unique flora and fauna, provides opportunities for desert exploration, off-roading, and wildlife spotting. For a taste of the Wild West, head to Tombstone, where you can step back in time and experience the infamous gunfight at the O.K. Corral
+                 </p>
+            </article>
+    
+            <iframe class="video"  src="https://www.youtube.com/embed/Wt4XODPm4hA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <select id="state" class="dropdown" onchange="setState(this)">
+                <option value="1">State Selection</option>
+                <option value="0">Alaska</option>
+                <option value="2">Maryland</option>
+                <option value="3">Pennsylvania</option>
+                <option value="4">California</option>
+                <option value="5">Oklahoma</option>
+            </select>
+        </div>
+
+        <div id="state2" style="display:none;">
+            <header>
+                <h1 class="text-header">Maryland</h1>
+                
+                <select class="text-header" id="location" style="width: 100%;">
+                  <option value="Alaska">Alaska</option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Maryland">Maryland</option>
+                  <option value="Pennsylvania">Pennsylvania</option>
+                  <option value="California">California</option>
+                  <option value="Oklahoma">Oklahoma</option>
+                </select>
+                <div id="weather" class="text-header"></div>
+            </header>
+    
+            <main class="flex-container"> 
+                <img class="img" src="./images/MDcity200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images//MDcolor200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/MDtree200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/MDwater200.jpg" alt="Callejas"></li>
+            </main>
+    
+            <article>
+                 <p class="text-body"> Maryland offers a diverse range of attractions and experiences for visitors. Begin your trip in Baltimore, where you can explore the lively Inner Harbor, visit iconic sites like Fort McHenry, and immerse yourself in the vibrant arts and cultural scene. Take a day trip to Annapolis, the state capital, to wander through its historic district, tour the United States Naval Academy, and enjoy waterfront dining. For a beach getaway, head to Ocean City, where you can soak up the sun on pristine sandy beaches, indulge in delicious seafood, and enjoy the lively atmosphere of the boardwalk
+                 </p>
+            </article>
+    
+            <iframe class="video"src="https://www.youtube.com/embed/1_NnGv8nTLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <select id="state" class="dropdown" onchange="setState(this)">
+                <option value="2">State Selection</option>
+                <option value="1">Arizona</option>
+                <option value="0">Alaska</option>
+                <option value="3">Pennsylvania</option>
+                <option value="4">California</option>
+                <option value="5">Oklahoma</option>
+            </select>
+        </div>
+
+        <div id="state3" style="display:none;">
+            
+            <header>
+                <h1 class="text-header">Pennsylvania</h1>
+                
+                <select class="text-header" id="location">
+                  <option value="Alaska">Alaska</option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Maryland">Maryland</option>
+                  <option value="Pennsylvania">Pennsylvania</option>
+                  <option value="California">California</option>
+                  <option value="Oklahoma">Oklahoma</option>
+                </select>
+                <div id="weather" class="text-header"></div>
+            </header>
+    
+            <main class="flex-container"> 
+                <img class="img" src="./images/PAbuilding200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/PAcity200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/PAstatue200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/PAtree200.jpg" alt="Callejas"></li>
+            </main>
+    
+            <article>
+                 <p class="text-body"> Pennsylvania is a state with diverse attractions and experiences to offer. Start your trip in Philadelphia, the birthplace of America, where you can explore iconic landmarks like Independence Hall and the Liberty Bell, stroll through the historic district of Old City, and visit world-class museums such as the Philadelphia Museum of Art. Make your way to Pittsburgh, known for its striking skyline and vibrant arts scene. Explore the Andy Warhol Museum, take a ride up the Duquesne Incline for panoramic views of the city, and enjoy the diverse culinary offerings.
+                 </p>
+            </article>
+    
+            <iframe class="video" src="https://www.youtube.com/embed/kve9NLzqYss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <select id="state" class="dropdown" onchange="setState(this)">
+                <option value="3">State Selection</option>
+                <option value="1">Arizona</option>
+                <option value="2">Maryland</option>
+                <option value="0">Alaska</option>
+                <option value="4">California</option>
+                <option value="5">Oklahoma</option>
+            </select>
+        </div>
+
+        <div id="state4" style="display:none;">
+        
+            <header>
+                <h1 class="text-header">California</h1>
+                    
+                <select class="text-header" id="location">
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="California">California</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                </select>
+                <div id="weather" class="text-header"></div>
+            </header>
+
+            <main class="flex-container"> 
+                <img class="img" src="./images/CAbeach200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/CAbridge200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/CAbuilding200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/CAcity200.jpg" alt="Callejas"></li>
+            </main>
+
+            <article>
+                <p class="text-body"> California offers a multitude of attractions and experiences that make it a fantastic destination for travelers. Start your trip in San Francisco, known for its iconic Golden Gate Bridge, vibrant neighborhoods like Chinatown and the Mission District, and its historic cable cars. Take a scenic drive down the Pacific Coast Highway, stopping at breathtaking spots like Big Sur, where rugged cliffs meet the crashing waves of the Pacific Ocean. Visit Los Angeles to experience the glamour of Hollywood, explore the vibrant art scene in neighborhoods like Venice Beach, and soak up the sun on the famous beaches of Santa Monica.
+                </p>
+            </article>
+
+            <iframe class="vedio" src="https://www.youtube.com/embed/Z9Rs9ZFcZeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+            <select id="state" onchange="setState(this)">
+                <option value="0">State Selection</option>
+                <option value="1">Arizona</option>
+                <option value="2">Maryland</option>
+                <option value="3">Pennsylvania</option>
+                <option value="4">Alaska</option>
+                <option value="5">Oklahoma</option>
+            </select>
+        </div>
+
+        <div id="state5" style="display:none;">
+    
+            <header>
+                <h1 class="text-header">Oklahoma</h1>
+                    
+                <select class="text-header" id="location">
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="California">California</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                </select>
+                <div id="weather" class="text-header"></div>
+            </header>
+
+            <main class="flex-container"> 
+                <img class="img" src="./images/OKcity200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/OKgrass200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/OKmoutain200.jpg" alt="Callejas"></li>
+                <img class="img" src="./images/OKtree200.jpg" alt="Callejas"></li>
+            </main>
+
+            <article>
+                <p class="text-body"> Oklahoma offers a unique blend of natural beauty, vibrant culture, and rich history, making it an intriguing destination for travelers. Start your trip in Oklahoma City, the state capital, where you can explore the impressive Oklahoma City National Memorial & Museum, visit the Bricktown entertainment district for dining and nightlife, and discover the diverse exhibits at the Oklahoma City Museum of Art. Head to Tulsa, known for its art deco architecture, lively music scene, and the stunning Gathering Place park along the Arkansas River. 
+                </p>
+            </article>
+
+            <iframe class="video" src="https://www.youtube.com/embed/lWP3dMT59pE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <select id="state" class="dropdown" onchange="setState(this)">
+                <option value="0">State Selection</option>
+                <option value="1">Arizona</option>
+                <option value="2">Maryland</option>
+                <option value="3">Pennsylvania</option>
+                <option value="4">California</option>
+                <option value="5">Alaska</option>
+            </select>
+        </div>
+
+       
+    </div>
+
+
+
+
+
+
+
+    <div id=medium>
+
+        <div id="state0">
+            <header>
+                <h1 class="text-header">ALASKA</h1>
+                
+                <select class="text-header" id="location">
+                  <option value="Alaska">Alaska</option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Maryland">Maryland</option>
+                  <option value="Pennsylvania">Pennsylvania</option>
+                  <option value="California">California</option>
+                  <option value="Oklahoma">Oklahoma</option>
+                </select>
+                <div id="weather" class="text-header"></div>
+            </header>
+    
+            <div class="grid-container">
+    
+                <div class="grid-child purple">
+                    <main class="flex-container"> 
+                        <img class="img" src="./images/whale-300.jpg" alt="Callejas"></li>
+                        <img class="img" src="./images/downtown-300.jpg" alt="Callejas"></li>
+                        <img class="img" src="./images/landscape-300.jpg" alt="Callejas"></li>
+                        <img class="img" src="./images//kayak-300.jpg" alt="Callejas"></li>
+                    </main>
+                </div>
+            
+                <div class="grid-child green">
+                    
+                    <article>
+                        <p class="text-body">Discover the rich cultural and natural history of Alaska at the Alaska State Museum. It showcases exhibits on indigenous art, history, wildlife, and more. Enjoy kayaking or canoeing in the serene waters of Juneau's fjords and bays. You can paddle amidst breathtaking scenery and observe wildlife such as seals, sea lions, and eagles. Average high temperatures range from 58°F to 64°F, while average low temperatures range from 40°F to 50°F Juneau also receives a fair amount of rainfall, so it's advisable to pack appropriate rain gear when visiting. Alaska is renowned for its stunning natural wonders. It boasts numerous glaciers, including Hubbard Glacier, Mendenhall Glacier, and the impressive tidewater glaciers of Glacier Bay National Park. The northern lights (aurora borealis) are another incredible phenomenon that can be observed in certain parts of Alaska, especially during winter. </p>
+                    </article>
+                
+
+                
+                    <iframe class="video" src="https://www.youtube.com/embed/YiVajNQEU-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                </div>
+              
+            </div>
+    
+           
+            
+           <footer>
+            <select class="dropdown" onchange="setState(this)">
+                <option value="0">State Selection</option>
+                <option value="1">Arizona</option>
+                <option value="2">Maryland</option>
+                <option value="3">Pennsylvania</option>
+                <option value="4">California</option>
+                <option value="5">Oklahoma</option>
+            </select>
+           </footer>
+
+        </div>
+        
+        
+
+        <div id="state1" style="display:none;">
+            Arizona
+            <select id="state" onchange="setState(this)">
+                <option value="0">State Selection</option>
+                <option value="1">Arizona</option>
+                <option value="2">Maryland</option>
+                <option value="3">Pennsylvania</option>
+                <option value="4">California</option>
+                <option value="5">Alaska</option>
+            </select>
+        </div>
+
+        <div id="state2" style="display:none;">
+            Oklahoma
+            <select id="state" onchange="setState(this)">
+                <option value="0">State Selection</option>
+                <option value="1">Arizona</option>
+                <option value="2">Maryland</option>
+                <option value="3">Pennsylvania</option>
+                <option value="4">California</option>
+                <option value="5">Alaska</option>
+            </select>
+        </div>
+
+        <div id="state3" style="display:none;">
+            Oklahoma
+            <select id="state" onchange="setState(this)">
+                <option value="0">State Selection</option>
+                <option value="1">Arizona</option>
+                <option value="2">Maryland</option>
+                <option value="3">Pennsylvania</option>
+                <option value="4">California</option>
+                <option value="5">Alaska</option>
+            </select>
+        </div>
+
+        <div id="state4" style="display:none;">
+            Oklahoma
+            <select id="state" onchange="setState(this)">
+                <option value="0">State Selection</option>
+                <option value="1">Arizona</option>
+                <option value="2">Maryland</option>
+                <option value="3">Pennsylvania</option>
+                <option value="4">California</option>
+                <option value="5">Alaska</option>
+            </select>
+        </div>
+
+        <div id="state5" style="display:none;">
+            Oklahoma
+            <select id="state" onchange="setState(this)">
+                <option value="0">State Selection</option>
+                <option value="1">Arizona</option>
+                <option value="2">Maryland</option>
+                <option value="3">Pennsylvania</option>
+                <option value="4">California</option>
+                <option value="5">Alaska</option>
+            </select>
+        </div>
+        
+
+    </div>
+
+
+
+
+
+
+
+
+    <div id="large">
+
+        <header>
+            <h1 class="text-header">ALASKA</h1>
+            <p class="text-header">Curently &#x26C5; 59&deg; Hi: 63&deg;/Lo: 42&deg; 67%</p>
+        </header>
+
+        <main class="flex-container"> 
+            <img class="img" src="./images/whale-350.jpg" alt="Callejas"></li>
+            <img class="img" src="./images/downtown-350.jpg" alt="Callejas"></li>
+            <img class="img" src="./images/landscape-350.jpg" alt="Callejas"></li>
+            <img class="img" src="./images//kayak-350.jpg" alt="Callejas"></li>
+        </main>
+
+        <main class="flex-container-2"> 
+
+            <p class="text-body">
+                Discover the rich cultural and natural history of Alaska at the Alaska State Museum. It showcases exhibits on indigenous art, history, wildlife, and more. Enjoy kayaking or canoeing in the serene waters of Juneau's fjords and bays. You can paddle amidst breathtaking scenery and observe wildlife such as seals, sea lions, and eagles.The northern lights are another incredible phenomenon that can be observed in certain parts of Alaska, especially during winter. 
+            </p>
+
+            <iframe src="https://www.youtube.com/embed/YiVajNQEU-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <p class="text-body"> 
+                Average high temperatures range from 58°F to 64°F, while average low temperatures range from 40°F to 50°F Juneau also receives a fair amount of rainfall, so it's advisable to pack appropriate rain gear when visiting.Alaska is renowned for its stunning natural wonders. It boasts numerous glaciers, including Hubbard Glacier, Mendenhall Glacier, and the impressive tidewater glaciers of Glacier Bay National Park. 
+            </p>
+        </main>
+        
+        <footer>
+            <main class="flex-container-3"> 
+                <p class="az">Arizona</p>
+                <p class="md">Maryland</p>
+                <p class="pa">Pennsylvania</p>
+                <p class="ca">California</p>
+                <p class="ok">Oklahoma</p>
+            </main>
+        </footer>
+        
+    </div>
+
+</body>
+
+<script src="./jscript.js"></script>
+
+</html>

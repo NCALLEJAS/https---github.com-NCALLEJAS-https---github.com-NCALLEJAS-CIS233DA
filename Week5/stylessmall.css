@@ -1,0 +1,67 @@
+ /*
+ Dark blue rgb(68.1,84.0,106.0)
+ Light blue rgb(92.0,111.6,124.6)
+ Grey rgb(83.1,83.1,83.1)
+ yellow rgb(75.9,75.0,71.9)
+ */
+ 
+ #small{
+    
+    display: inline;
+
+    .text-header, .text-body{
+        background-color: rgb(182, 157, 82,0.9);
+        text-align: center;
+        margin: 0px;
+        color: rgb(0, 0, 0);
+        font-family: 'Times New Roman', serif;
+
+    }
+    .text-body{
+        font-size: large;
+        padding: 25px;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: rgb(68.1,84.0,106.0, 0.9);
+        gap: 30px;
+    }
+    
+    .img{
+        border-radius: 20px;
+        border: 1px solid rgb(184, 184, 184);
+        box-shadow: 5px 5px 2.5px rgb(125, 125, 125);
+    }
+
+    .video{
+        width: 100%;
+        height: 315px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: rgb(68.1,84.0,106.0,0.9);
+    }
+
+    .dropdown{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        background-color: rgb(68.1,84.0,106.0,0.9);
+        color: black;
+        font-size: 15px;
+        font-family: 'Times New Roman', serif;
+    }
+ }
+#medium{
+    display: none;
+}
+#large{
+    display: none;
+}
+
